@@ -208,6 +208,168 @@ body{
 
 
 
+
+
+
+/* Products */
+#wrapProducts {
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subwrapProducts {
+    /* background-color: cyan; */
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productcardWrap {
+    width: 45%;
+    height: 100%;
+    /* background-color: bisque; */
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.productCard {
+    width: 90%;
+    height: 100%;
+    /* border-left: 1px solid cyan; */
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.productImage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    margin: auto 0;
+    background-image: url('dumbbell.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 230px;
+    /* background-color: red; */
+
+}
+
+.descpProduct {
+    width: 60%;
+    height: 100%;
+    color: white;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descpProduct h1{
+    font-size: 40px;
+    color: cyan;
+    letter-spacing: 2px;
+}
+
+.optionProducts button{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.listdescpProducts {
+    padding-left: 25px;
+}
+
+.cartbtnProducts {
+    background-color: cyan;
+    border: 2px solid cyan;
+    width: 60%;
+    height: 12%;
+    cursor: pointer;
+}
+
+
+/* Hover Effects */
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 1444px) {
+    #wrapProducts {
+        height: 1500px;
+    }
+
+    #subwrapProducts {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+    }
+
+    .productcardWrap {
+        width: 70%;
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #subwrapProducts {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .productcardWrap {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .productImage {
+        display: none;
+    }
+
+    .productCard {
+        width: 100%;
+    }
+
+
+    .descpProduct {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Testimonials */
 
 #wrapTestimonial {

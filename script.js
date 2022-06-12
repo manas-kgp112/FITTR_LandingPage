@@ -1,3 +1,69 @@
+// Products
+let sizeOptions = document.querySelectorAll('.optionProducts > button');
+let priceProduct1 = document.getElementById('priceProduct1');
+let priceProduct2 = document.getElementById('priceProduct2');
+console.log(sizeOptions);
+
+for (let m = 0; m < sizeOptions.length; m++) {
+    sizeOptions[m].onfocus = () => {
+        sizeOptions[m].style.backgroundColor = 'cyan';
+        sizeOptions[m].style.boxShadow = '0 4px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 255, 0.19)';
+    }
+    sizeOptions[m].onblur = () => {
+        sizeOptions[m].style.backgroundColor = 'white';
+        sizeOptions[m].style.boxShadow = 'none';
+    } 
+}
+
+
+// Static price List
+sizeOptions[0].onclick = () => {
+    priceProduct1.innerText = '$12';
+}
+sizeOptions[1].onclick = () => {
+    priceProduct1.innerText = '$45';
+}
+sizeOptions[2].onclick = () => {
+    priceProduct1.innerText = '$80';
+}
+sizeOptions[3].onclick = () => {
+    priceProduct1.innerText = '$154';
+}
+
+
+
+sizeOptions[4].onclick = () => {
+    priceProduct2.innerText = '$700';
+}
+sizeOptions[5].onclick = () => {
+    priceProduct2.innerText = '$870';
+}
+sizeOptions[6].onclick = () => {
+    priceProduct2.innerText = '$999';
+}
+sizeOptions[7].onclick = () => {
+    priceProduct2.innerText = '$1200';
+}
+
+// if no option is selected 
+if (sizeOptions[0].clicked == false && sizeOptions[1].clicked == false && sizeOptions[2].clicked == false && sizeOptions[3].clicked == false) {
+    priceProduct.innerText = '$12-$154';
+}
+
+
+
+
+// Product Image
+let imageProduct = document.getElementsByClassName('productImage');
+imageProduct[1].style.backgroundImage = 'url(trademill2.png)';
+
+
+
+
+
+
+
+
 // Testimonial
 
 let testimonialImages = document.getElementsByClassName('imageTestimonial');
@@ -56,3 +122,4 @@ for (let k = 0; k < logoDivs.length; k++) {
         logoDivs[k].style.transform = 'scale(1)';
     }
 }
+
