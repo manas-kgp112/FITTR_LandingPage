@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/711e55e295.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <div id="wrapNav">
+        <div id="imageNav">
+            <img src="logo.png" alt="companyLogo">
+        </div>
+        <div id="subwrapNav">
+            <div><a href="#wrapBody" id="homesectionNav">Home</a></div>
+            <div><a href="#">Equipments</a></div>
+            <div><a href="#">Accessories</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+        <div id="hamburgerNav"><i class="fa-solid fa-bars" id="stripmark" onclick="toggleHamburger()"></i><i class="fa-solid fa-xmark" id="xmark" onclick="toggleHamburger()"></i></div>
+    </div>
+
+
+
+    <!-- LandingPage -->
+    <div id="wrapBody">
+        <div id="wrapbodycolorOverlay"></div>
+        <div id="contentwrapBody">
+            <div id="contentBody">
+                <h1><span>F</span>ITTR</h1>
+                <h4>A Moments of Fitness</h4>
+            </div>
+        </div>   
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Testimonials -->
+    <div id="wrapTestimonial">
+        <div id="headTestimonial">Client Testimonials</div>
+        <div id="subwrapTestimonial">
+            <div class="cardTestimonial">
+                <div class="imageTestimonial"></div>
+                <div class="quoteTestimonial">,,</div>
+                <div class="textTestimonial">
+                    One of the best stores to get fitness products.
+                    The quality is amazing and the discounts on prodcuts are mind boggling.
+                </div>
+                <div class="nameTestimonial">
+                    Kylie Ryan
+                </div>
+                <div class="cardcoloroverlayTestimonial"></div>
+            </div>
+            <div class="cardTestimonial">
+                <div class="imageTestimonial"></div>
+                <div class="quoteTestimonial">,,</div>
+                <div class="textTestimonial">
+                    Very impressed by the quality of products on sale. 
+                    All products are directly supplied from company
+                </div>
+                <div class="nameTestimonial">
+                    Donald White
+                </div>
+                <div class="cardcoloroverlayTestimonial"></div>
+            </div>
+            <div class="cardTestimonial">
+                <div class="imageTestimonial"></div>
+                <div class="quoteTestimonial">,,</div>
+                <div class="textTestimonial">
+                    Wide range of products available and that too from different
+                    manufacturers. 
+                </div>
+                <div class="nameTestimonial">
+                    Snoop Dogg
+                </div>
+                <div class="cardcoloroverlayTestimonial"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Feedback -->
+    <div id="wrapContact">
+        <div id="subwrapContact">
+            <div id="headContact"><h1>Feedback Form</h1></div>
+            <div id="detailsContact">
+                <form action="POST">
+                    <div><i class="fa-solid fa-user logoContact"></i><input type="text" name="name" id="nameContact" class="formInput" placeholder="Enter your full name"></div>
+                    <div><i class="fa-solid fa-at logoContact"></i><input type="email" name="email" id="emailContact" class="formInput" placeholder="Enter your email"></div>
+                    <div><i class="fa-solid fa-phone logoContact"></i><input type="tel" name="phone" id="phoneContact" class="formInput" placeholder="Enter your contact number"></div>
+                    <div>
+                        <i class="fa-solid fa-box-open logoContact"></i>
+                        <select id="selectContact" class="formInput">
+                            <option value="none" disabled selected>Store type (of purchase)</option>
+                            <option value="retailStore">Retail Outlet</option>
+                            <option value="wesbite">Website</option>
+                            <option value="Application">Application</option>
+                            <option value="retailStore">Third Party Online Store</option>
+                            <option value="retailStore">Third Party Retail Outlet</option>
+                        </select>
+                    </div>
+                    <div id="messageDiv"><i class="fa-solid fa-message logoContact"></i><input type="text" name="name" id="messageContact" class="formInput" placeholder="Enter your Feedback"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div id="wrapFooter">
+        <div id="subwrapFooter1" class="subwrapFooter">
+            <div id="logoFooter">
+                <div><h1>FITTR</h1></div>
+                <br>
+                <div><h3>A Moments of Fitness</h3></div>
+            </div>
+            <div id="contentFooter">
+                <div id="contactwrapFooter">
+                    <div class="contactFooter" id="emailFooter">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        Email : company@gmail.com
+                    </div>
+                    <div class="contactFooter" id="addressFooter">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                        Address : 108, Shri Ram Chandra Colony, Dashrath Marg
+                    </div>
+                    <div class="contactFooter" id="phoneFooter">
+                        <a href="#"><i class="fa-solid fa-tty"></i></a>
+                        Tele : +141-4875-635-784
+                    </div>
+                </div>
+                <div id="tagswrapFooter">
+                    <h3><a href="#">Home</a></h3>
+                    <h3><a href="#">Equipments</a></h3>
+                    <h3><a href="#">Accessories</a></h3>
+                    <h3><a href="#">About</a></h3>
+                    <h3><a href="#">Contact</a></h3>
+                </div>
+            </div>
+        </div>
+        <div id="subwrapFooter2" class="subwrapFooter">
+            <div id="socialWrap">
+                <div class="logodivFooter"><a href="#" class="logolinkFooter"><i class="fa-brands fa-facebook-f logoFooter"></i></a></div>
+                <div class="logodivFooter"><a href="#" class="logolinkFooter"><i class="fa-brands fa-twitter logoFooter"></i></a></div>
+                <div class="logodivFooter"><a href="#" class="logolinkFooter"><i class="fa-solid fa-wifi logoFooter"></i></a></div>
+                <div class="logodivFooter"><a href="#" class="logolinkFooter"><i class="fa-solid fa-g logoFooter"></i></a></div>
+                <div class="logodivFooter"><a href="#" class="logolinkFooter"><i class="fa-brands fa-instagram logoFooter"></i></a></div>
+            </div>
+            <div id="copyrightWrap">&copy; Copyright.All rights reserved</div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
