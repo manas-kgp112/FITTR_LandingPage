@@ -1,3 +1,31 @@
+// Hamburger Menu
+let clicked = 0;
+let hamburgerIcon = document.getElementById('hamburgerNav');
+let xMark = document.getElementById('xmark');
+let stripMark = document.getElementById('stripmark');
+let extendedNav = document.getElementById('subwrapNav');
+let showHamburger = () => {
+    stripMark.style.display = 'none';
+    xMark.style.display = 'block';
+    extendedNav.style.display = 'flex';
+}
+
+let hideHamburger = () => {
+    stripMark.style.display = 'block';
+    xMark.style.display = 'none';
+    extendedNav.style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
 // Products
 let sizeOptions = document.querySelectorAll('.optionProducts > button');
 let priceProduct1 = document.getElementById('priceProduct1');
@@ -46,9 +74,9 @@ sizeOptions[7].onclick = () => {
 }
 
 // if no option is selected 
-if (sizeOptions[0].clicked == false && sizeOptions[1].clicked == false && sizeOptions[2].clicked == false && sizeOptions[3].clicked == false) {
-    priceProduct.innerText = '$12-$154';
-}
+// if (sizeOptions[0].clicked == false && sizeOptions[1].clicked == false && sizeOptions[2].clicked == false && sizeOptions[3].clicked == false) {
+//     priceProduct.innerText = '$12-$154';
+// }   not working currently
 
 
 
@@ -97,7 +125,10 @@ for (let i = 0; i < inputsContact.length; i++) {
     }
 }
 
-
+let form = document.querySelector('form');
+setTimeout(() => {
+    form.reset();
+}, 2000);
 
 
 

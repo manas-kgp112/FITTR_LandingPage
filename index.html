@@ -24,7 +24,7 @@
             <div><a href="#">About</a></div>
             <div><a href="#">Contact</a></div>
         </div>
-        <div id="hamburgerNav"><i class="fa-solid fa-bars" id="stripmark" onclick="toggleHamburger()"></i><i class="fa-solid fa-xmark" id="xmark" onclick="toggleHamburger()"></i></div>
+        <div id="hamburgerNav"><i class="fa-solid fa-bars" id="stripmark" onclick="showHamburger()"></i><i class="fa-solid fa-xmark" id="xmark" onclick="hideHamburger()"></i></div>
     </div>
 
 
@@ -160,13 +160,13 @@
         <div id="subwrapContact">
             <div id="headContact"><h1>Feedback Form</h1></div>
             <div id="detailsContact">
-                <form action="POST">
-                    <div><i class="fa-solid fa-user logoContact"></i><input type="text" name="name" id="nameContact" class="formInput" placeholder="Enter your full name"></div>
-                    <div><i class="fa-solid fa-at logoContact"></i><input type="email" name="email" id="emailContact" class="formInput" placeholder="Enter your email"></div>
-                    <div><i class="fa-solid fa-phone logoContact"></i><input type="tel" name="phone" id="phoneContact" class="formInput" placeholder="Enter your contact number"></div>
+                <form id="myForm">
+                    <div><i class="fa-solid fa-user logoContact"></i><input type="text" name="name" id="nameContact" class="formInput" placeholder="Enter your full name" required></div>
+                    <div><i class="fa-solid fa-at logoContact"></i><input type="email" name="email" id="emailContact" class="formInput" placeholder="Enter your email" required></div>
+                    <div><i class="fa-solid fa-phone logoContact"></i><input type="tel" name="phone" id="phoneContact" class="formInput" placeholder="Enter your contact number" required></div>
                     <div>
                         <i class="fa-solid fa-box-open logoContact"></i>
-                        <select id="selectContact" class="formInput">
+                        <select id="selectContact" class="formInput" required>
                             <option value="none" disabled selected>Store type (of purchase)</option>
                             <option value="retailStore">Retail Outlet</option>
                             <option value="wesbite">Website</option>
@@ -175,9 +175,10 @@
                             <option value="retailStore">Third Party Retail Outlet</option>
                         </select>
                     </div>
-                    <div id="messageDiv"><i class="fa-solid fa-message logoContact"></i><input type="text" name="name" id="messageContact" class="formInput" placeholder="Enter your Feedback"></div>
+                    <div id="messageDiv"><i class="fa-solid fa-message logoContact"></i><input type="text" name="name" id="messageContact" class="formInput" placeholder="Enter your Feedback" required></div>
                 </form>
             </div>
+            <button id="buttonContact" type="submit" onclick="resetForm()" form="myForm">Submit</button>
         </div>
     </div>
 
